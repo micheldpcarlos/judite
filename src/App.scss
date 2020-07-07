@@ -1,0 +1,30 @@
+.App {
+  display: flex;
+  justify-content: center;
+  align-content: stretch;
+  height: 100vh;
+  background: linear-gradient(to right, #c0392b, #8e44ad);
+
+  .demo-wrapper {
+    width: 70vw;
+    height: 70vh;
+    padding: 40px;
+
+    .editor-class {
+      background: #ffff;
+      padding: 15px;
+    }
+    .toolbar-class {
+      background: #ffff;
+
+      .rdw-text-align-wrapper::after,
+      .rdw-inline-wrapper::after {
+        content: "";
+        background: lightgray;
+        width: 1px;
+        height: 90%;
+        margin: 0 15px;
+      }
+    }
+  }
+}
